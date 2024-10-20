@@ -1,0 +1,286 @@
+body {
+    font-family: Onest, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.perfil-img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+table {
+    font-family: Onest, Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: justify;
+}
+
+th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+address {
+    margin-left: 5%;
+}
+
+iframe {
+    width: 100%;
+    height: 360px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 12px 32px;
+    margin: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: var(--list-item-bg-color, #e0e1dd);
+    color: var(--foreground-color, #000);
+    transition: color 150ms, background-color 150ms; /* Melhorar a sintaxe */
+}
+
+nav a:hover {
+    background-color: var(--list-item-bg-color-hover, #354f52);
+    color: rgb(255, 255, 255);
+}
+
+/* Ícones */
+#sobre a {
+    display: inline-block;
+    border-radius: 50%; /* Torna o ícone arredondado */
+    padding: 6px; /* Adiciona espaçamento interno */
+    transition: background-color 0.3s ease; /* Transição suave de fundo */
+}
+
+#sobre a img {
+    height: 32px;
+    width: 32px;
+    transition: filter 0.3s ease; /* Transição suave para o filtro */
+}
+
+#sobre a:hover {
+    background-color: black; /* Cor de fundo preta ao passar o mouse */
+}
+
+#sobre a img:hover {
+    filter: invert(100%) brightness(200%); /* Apenas inverte as cores do ícone, tornando-o visível */
+}
+
+.btn-linktree {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: var(--list-item-bg-color, #e0e1dd);
+    color: var(--foreground-color, #000);
+    transition: color 150ms, background-color 150ms; /* Melhorar a sintaxe */
+}
+
+.btn-linktree:hover {
+    background-color: var(--list-item-bg-color-hover, #354f52);
+    color: rgb(255, 255, 255);
+}
+
+/* Ícones HTML/CSS */
+.icon-htmljscss {
+    width: 150px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção do ícone */
+}
+
+#htmljscss p {
+    text-align: left; /* Alinha o texto e a imagem à esquerda */
+    margin-top: 90px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;        /* Limita a largura máxima do formulário */
+    padding: 20px;
+    background-color: #f8f9fa; /* Cor de fundo para destacar o formulário */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+}
+
+#center {
+    text-align: center;
+}
+
+#linktree {
+    margin-left: 5%;
+}
+
+#contato {
+    margin-left: 5%;
+}
+
+#apresentacao {
+    text-align: center;
+}
+
+#rodape {
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px; /* Adiciona espaço interno */
+    margin-top: 120px; /* Espaçamento acima do rodapé */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;             /* Utiliza flexbox */
+    justify-content: center;   /* Centraliza horizontalmente */
+    margin-top: 20px;         /* Espaçamento acima do botão */
+}
+
+#contactButton {
+    background-color: #007bff; /* Cor de fundo inicial */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Suave transição */
+}
+
+#contactButton:hover {
+    background-color: #0056b3; /* Cor quando o mouse estiver sobre o botão */
+}
+
+/* Estilização do formulário */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do formulário */
+    justify-content: center; /* Centraliza verticalmente se a altura for definida */
+    margin: 0px; /* Aplica uma margem vertical de 20px e centraliza horizontalmente */
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#formulario h2 {
+    text-align: center;
+    margin-bottom: 0; /* Removido espaço inferior para a linha ficar mais perto do título */
+    color: #333;
+    font-family: Onest, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    position: relative; /* Adicionado para que a linha use essa posição como referência */
+}
+
+#formulario h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #000;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -5px; /* Alinhado logo abaixo do título */
+    left: 20%; /* Centraliza horizontalmente em relação ao título */
+    transform: translateX(-50%); /* Ajusta a posição para garantir que a linha fique no centro */
+    border-radius: 10px;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="file"],
+form input[type="date"],
+form input[type="time"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Onest, Verdana, Geneva, Tahoma, sans-serif;
+    transition: border-color 0.3s ease; /* Transição suave de borda */
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #007BFF; /* Cor de destaque ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+form input[type="submit"],
+form button {
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Suave transição */
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #218838; /* Cor quando o mouse estiver sobre o botão */
+}
+
+#overlay {
+    display: none; /* Oculta o overlay por padrão */
+    position: fixed; /* Fixa o overlay na tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#contactForm {
+    background: white; /* Fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 500px; /* Largura máxima do pop-up */
+    width: 90%; /* Largura 90% do elemento pai */
+    max-height: 90%; /* Altura máxima do pop-up */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
